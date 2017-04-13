@@ -34,10 +34,10 @@ def get_online_friends(login, password):
 def output_friends_to_console(friends_online):
     print('List of my friends into online:')
     print('-------------------------------')
-    i = 1
+    count_user = 1
     for user in friends_online:
-        print('{}. {} {}'.format(i, user['first_name'], user['last_name']))
-        i += 1
+        print('{}. {} {}'.format(count_user, user['first_name'], user['last_name']))
+        count_user += 1
 
 if __name__ == '__main__':
     login = get_user_login()
